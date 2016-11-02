@@ -1,3 +1,11 @@
-<h2 id="title">Welcome to Ember</h2>
+
+<button {{action 'openToggle'}}>change</button>
+
+
+{{#if isOpenToggle}}
+	{{x-toggle value=toggleValue size="large" offLabel=false onLabel=true onToggle=(mut toggleValue)}}
+{{/if}}
+
+
 
 {{outlet}}
