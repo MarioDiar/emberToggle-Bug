@@ -4,7 +4,7 @@ export default Ember.Controller.extend({
 	isOpenToggle: false,
 
 	actions: {
-		openToggle(){
+		openToggle() {
 			this.set('isOpenToggle', true);
 		}
 	}

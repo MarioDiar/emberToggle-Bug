@@ -1,11 +1,10 @@
 
-<button {{action 'openToggle'}}>change</button>
+<button {{action 'openToggle'}}>Open other toggle button</button>
 
+{{x-toggle value=myValue size="large" onToggle=(mut myValue)}}
 
 {{#if isOpenToggle}}
-	{{x-toggle value=toggleValue size="large" offLabel=false onLabel=true onToggle=(mut toggleValue)}}
+	{{x-toggle value=toggleValue size="large" onToggle=(mut toggleValue)}}
 {{/if}}
-
-
 
 {{outlet}}
